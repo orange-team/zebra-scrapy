@@ -15,6 +15,7 @@ class duoduoSpider(CrawlSpider):
     name = "duoduo"
     allowed_domains = ['duoduo.cn']
     # 知识 > 准备怀孕
+    # //div[@class='pager']//@href
     start_urls = [
             "http://www.duoduo.cn/knows,list/101",
             "http://www.duoduo.cn/knows,list/112"
