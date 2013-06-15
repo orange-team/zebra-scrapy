@@ -13,3 +13,4 @@ NEWSPIDER_MODULE = 'zebra.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'zebra (+http://www.yourdomain.com)'
+ITEM_PIPELINES = ['zebra.pipelines.ZebraPipeline']
