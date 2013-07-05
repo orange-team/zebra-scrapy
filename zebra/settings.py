@@ -14,3 +14,10 @@ NEWSPIDER_MODULE = 'zebra.spiders'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'zebra (+http://www.yourdomain.com)'
 ITEM_PIPELINES = ['zebra.pipelines.ZebraPipeline']
+
+
+LOG_ENABLED = True
+LOG_ENCODING = 'utf-8'
+LOG_FILE = './zebra.log'
+LOG_LEVEL = 'DEBUG'
+LOG_STDOUT = False

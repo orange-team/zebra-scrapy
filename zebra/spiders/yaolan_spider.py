@@ -47,6 +47,9 @@ class ZebraSpider(CrawlSpider):
         item = ZebraItem()
         item['title'] = hxs.select("//h1/text()").extract()
         item['link'] = response.url
-        item['content'] = hxs.select("//div[@class='cont_font114']/*").extract()
+        item['content'] = hxs.select("//div[@class='cont_font114']").extract()
+        item['source'] = "yaolan.com"
+        item['section'] = 1
+        item['keyword'] = 1
         return item
 

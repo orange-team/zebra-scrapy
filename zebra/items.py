@@ -9,3 +9,6 @@ class ZebraItem(Item):
     title = Field()
     link = Field()
     content = Field()
+    source = Field()
+    section = Field()
+    keyword = Field()
